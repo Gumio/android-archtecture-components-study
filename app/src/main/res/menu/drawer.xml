@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".NavigationViewActivity">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_1"
+            android:checked="true"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Item1"/>
+        <item
+            android:id="@+id/navigation_item_2"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Item2"/>
+
+        <!-- Sub Headerを作成 -->
+        <item
+            android:id="@+id/navigation_sub_header"
+            android:title="SubHeader">
+            <menu>
+                <item
+                    android:id="@+id/navigation_sub_item_1"
+                    android:icon="@drawable/ic_launcher_foreground"
+                    android:title="Item1"/>
+                <item
+                    android:id="@+id/navigation_sub_item_2"
+                    android:icon="@drawable/ic_launcher_foreground"
+                    android:title="Item2"/>
+            </menu>
+        </item>
+    </group>
+</menu>

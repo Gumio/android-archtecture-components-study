@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gumio_inf.aacsampleapp">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppTheme.TranslucentStatusBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.LiveDataActivity" />
+
+        <service
+            android:name=".ui.service.SimpleJobIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name=".ui.activity.DialogActivity" />
+        <activity android:name=".ui.activity.SensorActivity" />
+        <activity android:name=".ui.activity.ViewModelActivity" />
+        <activity android:name=".ui.activity.LifecyclesActivity" />
+        <activity android:name=".ui.activity.RoomActivity"
+            android:theme="@style/Theme.CheeseRoom" />
+    </application>
+
+</manifest>

@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.AppTheme.TranslucentStatusBar" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- パネル(Menu) の背景 -->
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+    </style>
+
+    <style name="ToolbarPopupTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="Theme.CheeseRoom" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="ThemeOverlay.CheeseRoom.ActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="TextAppearance.CheeseRoom.CheeseName.GridItem" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.CheeseRoom.CheeseName" parent="TextAppearance.AppCompat.Large"></style>
+
+    <style name="TextAppearance.CheeseRoom.CheeseDescription" parent="TextAppearance.AppCompat.Body1" />
+
+    <!-- CollapsingToolBar -->
+    <!-- 拡大したとき -->
+    <style name="TextAppearance.Design.CollapsingToolbar.Expanded" parent="TextAppearance.Design.CollapsingToolbar.Expanded" tools:ignore="ResourceCycle">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+    <!-- 縮小したとき -->
+    <style name="TextAppearance.Design.CollapsingToolbar.Collapsed" parent="TextAppearance.Design.CollapsingToolbar.Collapsed" tools:ignore="ResourceCycle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
