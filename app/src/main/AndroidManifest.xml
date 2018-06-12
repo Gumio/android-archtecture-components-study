@@ -18,17 +18,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.LiveDataActivity" />
+        <activity android:name=".ui.activities.LiveDataActivity" />
 
         <service
             android:name=".ui.service.SimpleJobIntentService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <activity android:name=".ui.activity.DialogActivity" />
-        <activity android:name=".ui.activity.SensorActivity" />
-        <activity android:name=".ui.activity.ViewModelActivity" />
-        <activity android:name=".ui.activity.LifecyclesActivity" />
-        <activity android:name=".ui.activity.RoomActivity"
+        <activity android:name=".ui.activities.DialogActivity" />
+        <activity android:name=".ui.activities.SensorActivity" />
+        <activity android:name=".ui.activities.ViewModelActivity" />
+        <activity android:name=".ui.activities.LifecyclesActivity" />
+        <activity android:name=".ui.activities.RoomActivity"
             android:theme="@style/Theme.CheeseRoom" />
     </application>
 

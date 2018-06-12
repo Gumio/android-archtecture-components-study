@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.TopFragment"
+    tools:context=".ui.fragments.TopFragment"
     android:background="#FF2238">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/button2"
@@ -26,5 +29,6 @@
             android:textColor="#ffffff"
             android:layout_centerInParent="true"/>
     </RelativeLayout>
+    </ScrollView>
 </FrameLayout>
 </layout>

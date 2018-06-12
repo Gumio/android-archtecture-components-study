@@ -9,7 +9,7 @@ import android.os.SystemClock
 import android.support.v4.app.JobIntentService
 import android.util.Log
 import android.widget.Toast
-import com.gumio_inf.aacsampleapp.ui.activity.DialogActivity
+import com.gumio_inf.aacsampleapp.ui.activities.DialogActivity
 
 
 class SimpleJobIntentService: JobIntentService() {

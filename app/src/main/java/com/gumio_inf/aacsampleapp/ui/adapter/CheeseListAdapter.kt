@@ -14,8 +14,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.gumio_inf.aacsampleapp.R
-import com.gumio_inf.aacsampleapp.vo.Cheese
-import com.gumio_inf.aacsampleapp.vo.Cheeses
+import com.gumio_inf.aacsampleapp.model.vo.Cheese
+import com.gumio_inf.aacsampleapp.model.vo.Cheeses
 import java.util.*
 
 internal class CheeseListAdapter(

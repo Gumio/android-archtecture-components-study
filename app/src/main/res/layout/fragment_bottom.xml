@@ -6,8 +6,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#a74b78"
-        tools:context=".ui.fragment.BottomFragment">
+        tools:context=".ui.fragments.BottomFragment">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -28,5 +31,6 @@
                 android:textColor="#ffffff"
                 android:layout_centerInParent="true"/>
         </RelativeLayout>
+        </ScrollView>
     </FrameLayout>
 </layout>

@@ -5,10 +5,10 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.View
-import com.gumio_inf.aacsampleapp.ui.activity.LifecyclesActivity
-import com.gumio_inf.aacsampleapp.ui.activity.LiveDataActivity
-import com.gumio_inf.aacsampleapp.ui.activity.RoomActivity
-import com.gumio_inf.aacsampleapp.ui.activity.ViewModelActivity
+import com.gumio_inf.aacsampleapp.ui.activities.LifecyclesActivity
+import com.gumio_inf.aacsampleapp.ui.activities.LiveDataActivity
+import com.gumio_inf.aacsampleapp.ui.activities.RoomActivity
+import com.gumio_inf.aacsampleapp.ui.activities.ViewModelActivity
 import com.gumio_inf.aacsampleapp.ui.adapter.RecyclerAdapter
 import com.gumio_inf.aacsampleapp.ui.adapter.RecyclerViewHolder
 import kotlinx.android.synthetic.main.activity_main.*
