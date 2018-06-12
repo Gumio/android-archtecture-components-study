@@ -14,14 +14,14 @@
             android:id="@+id/image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:contentDescription="@string/cheese_image"
+            android:contentDescription="@string/ramen_image"
             android:scaleType="centerCrop"
-            tools:src="@drawable/cheese_1"/>
+            tools:src="@drawable/ramen_1"/>
 
         <TextView
             android:id="@+id/name"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/cheese_icon_size"
+            android:layout_height="@dimen/ramen_icon_size"
             android:layout_gravity="bottom"
             android:background="@color/scrim"
             android:ellipsize="end"
@@ -29,7 +29,7 @@
             android:maxLines="1"
             android:paddingLeft="@dimen/spacing_medium"
             android:paddingRight="@dimen/spacing_medium"
-            android:textAppearance="@style/TextAppearance.CheeseRoom.CheeseName.GridItem"
+            android:textAppearance="@style/TextAppearance.RamenRoom.RamenName.GridItem"
             tools:drawableEnd="@drawable/ic_favorite"
             tools:drawableTint="@android:color/white"
             tools:text="Pave de Chirac"/>

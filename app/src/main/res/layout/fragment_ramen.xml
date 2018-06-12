@@ -8,6 +8,5 @@
         android:layout_height="match_parent"
         android:clipChildren="false"
         android:clipToPadding="false"
-        android:padding="@dimen/spacing_grid_item"
-        tools:context="com.example.android.cheeseroom.ui.list.CheeseListFragment"/>
+        android:padding="@dimen/spacing_grid_item"/>
 </layout>

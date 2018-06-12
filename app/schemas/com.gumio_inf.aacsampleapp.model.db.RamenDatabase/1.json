@@ -2,10 +2,10 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "f301855a37267e56c579158eaa348f71",
+    "identityHash": "108e6758fc872dc8e0451955fc3c0c76",
     "entities": [
       {
-        "tableName": "Cheese",
+        "tableName": "Ramen",
         "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `name` TEXT NOT NULL, `favorite` INTEGER NOT NULL, PRIMARY KEY(`id`))",
         "fields": [
           {
@@ -39,7 +39,7 @@
     ],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"f301855a37267e56c579158eaa348f71\")"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"108e6758fc872dc8e0451955fc3c0c76\")"
     ]
   }
 }

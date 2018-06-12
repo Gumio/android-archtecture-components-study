@@ -6,8 +6,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/scroll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.example.android.cheeseroom.ui.detail.CheeseDetailFragment">
+        android:layout_height="match_parent">
 
         <android.support.design.widget.CoordinatorLayout
             android:id="@+id/container"
@@ -23,10 +22,9 @@
                 <ImageView
                     android:id="@+id/image"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/cheese_image_height"
-                    android:contentDescription="@string/cheese_image"
-                    android:scaleType="centerCrop"
-                    tools:src="@drawable/cheese_1"/>
+                    android:layout_height="@dimen/ramen_image_height"
+                    android:contentDescription="@string/ramen_image"
+                    android:scaleType="centerCrop"/>
 
                 <TextView
                     android:id="@+id/name"
@@ -35,7 +33,7 @@
                     android:layout_marginLeft="@dimen/spacing_large"
                     android:layout_marginRight="@dimen/spacing_large"
                     android:layout_marginTop="@dimen/spacing_medium"
-                    android:textAppearance="@style/TextAppearance.CheeseRoom.CheeseName"
+                    android:textAppearance="@style/TextAppearance.RamenRoom.RamenName"
                     tools:text="Pave de Chirac"/>
 
                 <TextView
@@ -46,8 +44,8 @@
                     android:layout_marginRight="@dimen/spacing_large"
                     android:layout_marginTop="@dimen/spacing_small"
                     android:justificationMode="inter_word"
-                    android:text="@string/lorem_ipsum"
-                    android:textAppearance="@style/TextAppearance.CheeseRoom.CheeseDescription"
+                    android:text="@string/ramen_content"
+                    android:textAppearance="@style/TextAppearance.RamenRoom.RamenDescription"
                     tools:targetApi="26"/>
 
                 <TextView
@@ -58,8 +56,8 @@
                     android:layout_marginRight="@dimen/spacing_large"
                     android:layout_marginTop="@dimen/spacing_small"
                     android:justificationMode="inter_word"
-                    android:text="@string/lorem_ipsum"
-                    android:textAppearance="@style/TextAppearance.CheeseRoom.CheeseDescription"
+                    android:text="@string/ramen_content"
+                    android:textAppearance="@style/TextAppearance.RamenRoom.RamenDescription"
                     tools:targetApi="26"/>
 
                 <TextView
@@ -71,8 +69,8 @@
                     android:layout_marginRight="@dimen/spacing_large"
                     android:layout_marginTop="@dimen/spacing_small"
                     android:justificationMode="inter_word"
-                    android:text="@string/lorem_ipsum"
-                    android:textAppearance="@style/TextAppearance.CheeseRoom.CheeseDescription"
+                    android:text="@string/ramen_content"
+                    android:textAppearance="@style/TextAppearance.RamenRoom.RamenDescription"
                     tools:targetApi="26"/>
 
             </LinearLayout>

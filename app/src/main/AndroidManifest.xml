@@ -29,7 +29,7 @@
         <activity android:name=".ui.activities.ViewModelActivity" />
         <activity android:name=".ui.activities.LifecyclesActivity" />
         <activity android:name=".ui.activities.RoomActivity"
-            android:theme="@style/Theme.CheeseRoom" />
+            android:theme="@style/Theme.RamenRoom" />
     </application>
 
 </manifest>

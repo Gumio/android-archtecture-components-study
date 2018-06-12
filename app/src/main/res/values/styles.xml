@@ -22,21 +22,21 @@
         <item name="android:background">@color/colorPrimary</item>
     </style>
 
-    <style name="Theme.CheeseRoom" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.RamenRoom" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
     </style>
 
-    <style name="ThemeOverlay.CheeseRoom.ActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="ThemeOverlay.RamenRoom.ActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="TextAppearance.CheeseRoom.CheeseName.GridItem" parent="TextAppearance.AppCompat.Medium">
+    <style name="TextAppearance.RamenRoom.RamenName.GridItem" parent="TextAppearance.AppCompat.Medium">
         <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="TextAppearance.CheeseRoom.CheeseName" parent="TextAppearance.AppCompat.Large"></style>
+    <style name="TextAppearance.RamenRoom.RamenName" parent="TextAppearance.AppCompat.Large"></style>
 
-    <style name="TextAppearance.CheeseRoom.CheeseDescription" parent="TextAppearance.AppCompat.Body1" />
+    <style name="TextAppearance.RamenRoom.RamenDescription" parent="TextAppearance.AppCompat.Body1" />
 
     <!-- CollapsingToolBar -->
     <!-- 拡大したとき -->

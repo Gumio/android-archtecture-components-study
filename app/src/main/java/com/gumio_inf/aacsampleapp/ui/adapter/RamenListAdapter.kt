@@ -14,16 +14,16 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.gumio_inf.aacsampleapp.R
-import com.gumio_inf.aacsampleapp.model.vo.Cheese
-import com.gumio_inf.aacsampleapp.model.vo.Cheeses
+import com.gumio_inf.aacsampleapp.model.vo.Ramen
+import com.gumio_inf.aacsampleapp.model.vo.Ramens
 import java.util.*
 
-internal class CheeseListAdapter(
+internal class RamenListAdapter(
         context: Context,
-        private val onCheeseSelected: (Long) -> Unit)
-    : RecyclerView.Adapter<CheeseListAdapter.CheeseViewHolder>() {
+        private val onRamenSelected: (Long) -> Unit)
+    : RecyclerView.Adapter<RamenListAdapter.RamenViewHolder>() {
 
-    private val cheeses = ArrayList<Cheese>()
+    private val ramens = ArrayList<Ramen>()
 
     private val favoriteDrawable = VectorDrawableCompat.create(context.resources,
             R.drawable.ic_favorite, context.theme)?.apply {
@@ -31,29 +31,29 @@ internal class CheeseListAdapter(
     }
 
     private val onClickListener = View.OnClickListener {
-        onCheeseSelected(it.getTag(R.id.cheese_id) as Long)
+        onRamenSelected(it.getTag(R.id.ramen_id) as Long)
     }
 
-    fun setCheeses(cheeses: List<Cheese>?) {
-        this.cheeses.clear()
-        if (cheeses == null) {
+    fun setRamens(ramens: List<Ramen>?) {
+        this.ramens.clear()
+        if (ramens == null) {
             return
         }
-        this.cheeses.addAll(cheeses)
+        this.ramens.addAll(ramens)
         notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-            CheeseViewHolder(parent, onClickListener)
+            RamenViewHolder(parent, onClickListener)
 
-    override fun onBindViewHolder(holder: CheeseViewHolder, position: Int) =
-            holder.bind(cheeses[position], favoriteDrawable)
+    override fun onBindViewHolder(holder: RamenViewHolder, position: Int) =
+            holder.bind(ramens[position], favoriteDrawable)
 
-    override fun getItemCount() = cheeses.size
+    override fun getItemCount() = ramens.size
 
-    class CheeseViewHolder(parent: ViewGroup, onClickListener: View.OnClickListener)
+    class RamenViewHolder(parent: ViewGroup, onClickListener: View.OnClickListener)
         : RecyclerView.ViewHolder(LayoutInflater.from(parent.context)
-            .inflate(R.layout.cheese_list_item, parent, false)) {
+            .inflate(R.layout.ramen_list_item, parent, false)) {
 
         private var image = itemView.findViewById<ImageView>(R.id.image)
         private var name = itemView.findViewById<TextView>(R.id.name)
@@ -63,12 +63,12 @@ internal class CheeseListAdapter(
             ViewGroupCompat.setTransitionGroup(itemView as ViewGroup, true)
         }
 
-        fun bind(cheese: Cheese, favoriteDrawable: Drawable?) {
-            itemView.setTag(R.id.cheese_id, cheese.id)
-            image.setImageResource(Cheeses.getDrawableForCheese(cheese.name))
-            name.text = cheese.name
+        fun bind(ramen: Ramen, favoriteDrawable: Drawable?) {
+            itemView.setTag(R.id.ramen_id, ramen.id)
+            image.setImageResource(Ramens.getDrawableForRamen(ramen.name))
+            name.text = ramen.name
             TextViewCompat.setCompoundDrawablesRelativeWithIntrinsicBounds(name,
-                    null, null, if (cheese.favorite) favoriteDrawable else null, null)
+                    null, null, if (ramen.favorite) favoriteDrawable else null, null)
         }
 
     }

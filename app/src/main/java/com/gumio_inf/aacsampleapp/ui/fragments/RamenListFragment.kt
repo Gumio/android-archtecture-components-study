@@ -12,19 +12,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.gumio_inf.aacsampleapp.R
-import com.gumio_inf.aacsampleapp.ui.adapter.CheeseListAdapter
-import com.gumio_inf.aacsampleapp.ui.viewmodel.CheeseListViewModel
+import com.gumio_inf.aacsampleapp.ui.adapter.RamenListAdapter
+import com.gumio_inf.aacsampleapp.ui.viewmodel.RamenListViewModel
 
-class CheeseListFragment : Fragment() {
+class RamenListFragment : Fragment() {
 
-    private lateinit var adapter: CheeseListAdapter
+    private lateinit var adapter: RamenListAdapter
 
     interface Listener {
-        fun onCheeseSelected(cheeseId: Long)
+        fun onRamenSelected(ramenId: Long)
     }
 
     companion object {
-        fun newInstance() = CheeseListFragment()
+        fun newInstance() = RamenListFragment()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,27 +35,27 @@ class CheeseListFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        val viewModel = ViewModelProviders.of(this).get(CheeseListViewModel::class.java)
-        viewModel.cheeses.observe(this, Observer { adapter.setCheeses(it) })
+        val viewModel = ViewModelProviders.of(this).get(RamenListViewModel::class.java)
+        viewModel.ramens.observe(this, Observer { adapter.setRamens(it) })
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_cheese, container, false)
+        return inflater.inflate(R.layout.fragment_ramen, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         view.findViewById<RecyclerView>(R.id.list).run {
             setHasFixedSize(true)
             layoutManager = GridLayoutManager(context, 2)
-            adapter = CheeseListAdapter(view.context, { cheeseId ->
+            adapter = RamenListAdapter(view.context, { ramenId ->
                 activity?.let {
                     if (!it.isFinishing) {
-                        (it as Listener).onCheeseSelected(cheeseId)
+                        (it as Listener).onRamenSelected(ramenId)
                     }
                 }
             }).also {
-                this@CheeseListFragment.adapter = it
+                this@RamenListFragment.adapter = it
             }
         }
     }

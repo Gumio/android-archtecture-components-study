@@ -3,11 +3,11 @@ package com.gumio_inf.aacsampleapp.ui.activities
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.gumio_inf.aacsampleapp.R
-import com.gumio_inf.aacsampleapp.ui.fragments.CheeseDetailFragment
-import com.gumio_inf.aacsampleapp.ui.fragments.CheeseListFragment
+import com.gumio_inf.aacsampleapp.ui.fragments.RamenDetailFragment
+import com.gumio_inf.aacsampleapp.ui.fragments.RamenListFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
-class RoomActivity : AppCompatActivity(), CheeseListFragment.Listener {
+class RoomActivity : AppCompatActivity(), RamenListFragment.Listener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,15 +17,15 @@ class RoomActivity : AppCompatActivity(), CheeseListFragment.Listener {
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                    .add(R.id.container, CheeseListFragment.newInstance())
+                    .add(R.id.container, RamenListFragment.newInstance())
                     .commitNow()
         }
     }
 
-    override fun onCheeseSelected(cheeseId: Long) {
+    override fun onRamenSelected(ramenId: Long) {
         supportFragmentManager.beginTransaction()
                 .addToBackStack(null)
-                .replace(R.id.container, CheeseDetailFragment.newInstance(cheeseId))
+                .replace(R.id.container, RamenDetailFragment.newInstance(ramenId))
                 .commit()
     }
 }

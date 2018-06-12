@@ -6,9 +6,9 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="list_item_avatar_size">40dp</dimen>
 
-    <dimen name="cheese_icon_size">48dp</dimen>
-    <dimen name="cheese_favorite_size">24dp</dimen>
-    <dimen name="cheese_image_height">256dp</dimen>
+    <dimen name="ramen_icon_size">48dp</dimen>
+    <dimen name="ramen_favorite_size">24dp</dimen>
+    <dimen name="ramen_image_height">256dp</dimen>
     <dimen name="spacing_grid_item">1dp</dimen>
 
     <dimen name="spacing_small">8dp</dimen>
